@@ -19,3 +19,6 @@ Do this for all dependencies listed in the TOML file
 
 
 AI questions: 
+I asked chatGPT to help write two programs: one as the UI with an input and the other as the actual code that would pull the information from the UI script. I then tried to understand the code that it gave me, and edited with my file names. 
+I then used the claude Haiku 4.5 within VSC to trouble shoot the code. I first added a GUI to the UI with the AI. 
+Then, I worked with the AI to find the best URL to use for FlyBase, as the code was having problems interacting with FlyBase's API.

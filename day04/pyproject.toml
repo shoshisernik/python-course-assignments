@@ -7,7 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "requests",
     "pandas",
-    "beautifulsoup4"
+
     ]
 
 [dependency-groups]
