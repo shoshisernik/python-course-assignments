@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, r'c:\python_course\python-course-assignments\day04')
 
-from code_geneloc_flybase import fetch_gene_data_by_id, fetch_gene_info_and_save
+from day04.flybase_fetcher import fetch_gene_data_by_id, fetch_gene_info_and_save
 import tempfile
 
 def test_fetch_gene_data():
