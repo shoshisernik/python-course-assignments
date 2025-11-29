@@ -13,8 +13,7 @@ def main():
             return
         if user_input.strip() == "":
             print("Please enter a guess, 's' to reveal the secret number, or 'x' to quit.")
-            continue
-             
+            continue    
         try: # Otherwise, put in an integer between 1 and 50 to guess.
             guess = int(user_input)
         except ValueError:
