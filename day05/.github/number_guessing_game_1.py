@@ -1,3 +1,5 @@
+#This version of the game is the same as the previous version, but in this version, the player can continue to guess until they get the number correct.
+
 import random
 
 def main():

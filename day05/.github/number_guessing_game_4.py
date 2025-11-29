@@ -1,3 +1,6 @@
+#This version of the game includes all of the previous features, including the addition of the 'd' command, which allows the player to toggle between Debug mode on and off.
+#the debug mode will print the secret number at the start of each round, allowing the player to see the know the number, and so check that the code is working.
+
 import random
 DEBUG = True 
 

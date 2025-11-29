@@ -1,3 +1,6 @@
+#This version of the game includes all of the previous features, including the addition of the 'm' command, which allows the player to toggle between Move_mode.
+#this mode will cause the secret number to change slightly after each guess, making the game more challenging.
+
 import random
 DEBUG = True 
 Move_mode = True

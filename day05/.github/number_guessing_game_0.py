@@ -1,3 +1,5 @@
+#This is the basic version of the number guessing game. The player has to guess a number between 1 and 50. After each guess, the program will tell the player if the secret number was higher or lower than the guess.
+
 import random
 
 def main():

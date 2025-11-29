@@ -1,3 +1,6 @@
+#This version of the game includes all of the previous features, including the addition of the 'x' command, which allows the player to quit the game.
+
+
 import random
 def main():
     print("I'm thinking of a number between 1 and 50...")

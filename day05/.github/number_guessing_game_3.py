@@ -1,3 +1,5 @@
+#This version of the game includes all of the previous features, including the addition of the 's' command, which when typed, will reveal the secret number.
+
 import random
 def main():
     print("I'm thinking of a number between 1 and 50...")
