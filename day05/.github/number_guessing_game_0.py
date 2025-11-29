@@ -7,9 +7,9 @@ def main():
     guess = int(input("Take a guess: "))
 
     if guess < secret_number:
-        print("My number is smaller.")
-    elif guess > secret_number:
         print("My number is bigger.")
+    elif guess > secret_number:
+        print("My number is smaller.")
     else:
         print("You guessed it! Well done!")
 
