@@ -11,7 +11,7 @@ def main():
         if user_input.lower() == 's':  #if the player wants the answer, they should type 's'.
             print(f"The secret number is: {secret_number}")
             return
-        if user_input.lower() == "":
+        if user_input.strip() == "":
             print("Please enter a guess, 's' to reveal the secret number, or 'x' to quit.")
             continue
              
