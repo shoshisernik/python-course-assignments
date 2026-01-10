@@ -97,6 +97,8 @@ def parse_submissions(subjects_path: Path) -> list[tuple[int, datetime]]:
     """
     Parse subjects.txt and return:
     [(day_number, submission_datetime), ...]
+    Columns are tab-separated:
+    submission_number, status, title, (empty), timestamp
     """
     submissions = []
 
@@ -104,17 +106,19 @@ def parse_submissions(subjects_path: Path) -> list[tuple[int, datetime]]:
         for line in f:
             line = line.rstrip()
 
-            # Split into [left columns] + [timestamp]
-            parts = re.split(r"\s{2,}", line)
-            if len(parts) != 2:
+            # Split by tabs
+            parts = line.split("\t")
+            if len(parts) < 5:
                 continue
 
-            left, timestamp = parts
-            left_parts = left.split(" ", 2)
-            if len(left_parts) < 3:
-                continue
+            # parts[0] = submission number
+            # parts[1] = OPEN/CLOSED status
+            # parts[2] = title
+            # parts[3] = empty column
+            # parts[4] = timestamp
 
-            _, _, title = left_parts
+            title = parts[2]
+            timestamp = parts[4]
 
             day = extract_day_from_title(title)
             if day is None or day not in VALID_DAYS:
